@@ -1,4 +1,4 @@
-import { login } from './action';
+import { signup } from './action';
 import Link from 'next/link';
 
 export default function LoginPage() {
@@ -21,11 +21,11 @@ export default function LoginPage() {
           type="password"
           required
         />
-        <button formAction={login} className="bg-blue-500 hover:bg-blue-700  text-white p-2 px-12 rounded-full self-center">
-          Log in
+        <button formAction={signup} className="bg-green-500 hover:bg-green-700 text-white p-2 px-12 rounded-full self-center">
+          Sign up
         </button>
         <div className="self-center">
-          Don't have an account? <Link className="hover:underline" href="/sign-up">Sign up</Link>
+          Already have an account? <Link className="hover:underline" href="/login">Log in</Link>
         </div>
       </form>
     </div>
