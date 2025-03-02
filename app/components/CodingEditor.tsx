@@ -14,7 +14,7 @@ interface CodingEditorProps {
   prompt?: JSX.Element;
   language: string;
   starterCode: string;
-  editorOptions?: any; // Can be typed more strictly with Monaco's IStandaloneEditorConstructionOptions if needed
+  editorOptions?: any;
 }
 
 const CodingEditor: React.FC<CodingEditorProps> = ({
